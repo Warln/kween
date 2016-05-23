@@ -4,7 +4,14 @@ body {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #707c77;
 }
-
+header {
+	padding: 1em 0;
+	width: 100%;
+  color: #fff;
+  text-align: center;
+  background-color: #157757;
+  background-image: linear-gradient(130deg, #155799, #175757);
+}
 a {
   color: #1e6bb8;
   text-decoration: none;
@@ -15,7 +22,7 @@ a:hover {
 
 .btn {
   display: inline-block;
-  margin-bottom: 1em;
+	padding: 0.5em 0.7em;
   color: rgba(255, 255, 255, 0.7);
   background-color: rgba(255, 255, 255, 0.07);
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -31,56 +38,20 @@ a:hover {
   background-color: rgba(255, 255, 255, 0.1);
   border-color: rgba(255, 255, 255, 0.3);
 }
-
-@media screen and (min-width: 64em) {
-  .btn {
-    padding: 0.7em 0.9em;
-  }
+main {
+  max-width: 65em;
+  padding: 0 5em;
+  margin: 0 auto;
 }
-@media screen and (min-width: 42em) and (max-width: 64em) {
-  .btn {
-    padding: 0.5em 0.7em;
-    font-size: 0.7em;
-  }
-}
-@media screen and (max-width: 42em) {
-  .btn {
-    padding: 0.7em;
-    font-size: 0.9em;
-  }
-}
-
-.header {
-  color: #fff;
-  text-align: center;
-  background-color: #157757;
-  background-image: linear-gradient(130deg, #155799, #175757);
-}
-/*
-@media screen and (min-width: 64em) {
-  .header {
-    padding: 1em auto;
-  }
-}
-@media screen and (min-width: 42em) and (max-width: 64em) {
-  .header {
-    padding: 1em auto;
-  }
-}
-@media screen and (max-width: 42em) {
-  .header {
-    padding: 0 auto;
-  }
-}
-*/
-.main img {
-  max-width: 100%;
-}
-.main h1, .main h2, .main h3, .main h4, .main h5, .main h6 {
+main h1, main h2, main h3, main h4, main h5, main h6 {
   font-weight: normal;
   color: #159957;
 }
-.main code {
+/*
+main img {
+  max-width: 100%;
+}
+main code {
   padding: 3px 5px;
   font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
   font-size: 0.9em;
@@ -88,7 +59,7 @@ a:hover {
   background-color: #f3f6fa;
   border-radius: 0.3em;
 }
-.main pre {
+main pre {
   padding: 0.7em;
   margin-top: 0;
   margin-bottom: 1em;
@@ -99,7 +70,7 @@ a:hover {
   border: solid 1px #dce6f0;
   border-radius: 0.3em;
 }
-.main pre > code {
+main pre > code {
   padding: 0;
   margin: 0;
   font-size: 0.9em;
@@ -109,21 +80,21 @@ a:hover {
   background: transparent;
   border: 0;
 }
-.main .highlight {
+main .highlight {
   margin-bottom: 1em;
 }
-.main .highlight pre {
+main .highlight pre {
   margin-bottom: 0;
   word-break: normal;
 }
-.main .highlight pre, .main pre {
+main .highlight pre, main pre {
   padding: 0.8em;
   overflow: auto;
   font-size: 0.9em;
   line-height: 1.45;
   border-radius: 0.3em; 
 }
-.main pre code, .main pre tt {
+main pre code, main pre tt {
   display: inline;
   max-width: initial;
   padding: 0;
@@ -134,101 +105,83 @@ a:hover {
   background-color: transparent;
   border: 0;
 }
-.main pre code:before, .main pre code:after, .main pre tt:before, .main pre tt:after {
+main pre code:before, main pre code:after, main pre tt:before, main pre tt:after {
   content: normal;
 }
-.main ul, .main ol {
+main ul, main ol {
   margin-top: 0;
 }
-.main blockquote {
+main blockquote {
   padding: 0 1em;
   margin-left: 0;
   color: #819198;
   border-left: 0.3em solid #dce6f0;
 }
-.main blockquote > :first-child {
+main blockquote > :first-child {
   margin-top: 0;
 }
-.main blockquote > :last-child {
+main blockquote > :last-child {
   margin-bottom: 0;
 }
-.main table {
+main table {
   display: block;
   width: 100%;
   overflow: auto;
   word-break: normal;
   word-break: keep-all;
 }
-.main table th {
+main table th {
   font-weight: bold;
 }
-.main table th, .main table td {
+main table th, main table td {
   padding: 0.5em 1em;
   border: 1px solid #e9ebec;
 }
-.main dl {
+main dl {
   padding: 0;
 }
-.main dl dt {
+main dl dt {
   padding: 0;
   margin-top: 1em;
   font-size: 1em;
   font-weight: bold;
 }
-.main dl dd {
+main dl dd {
   padding: 0;
   margin-bottom: 1em;
 }
-.main hr {
+main hr {
   height: 2px;
   padding: 0;
   margin: 1em 0;
   background-color: #eff0f1;
   border: 0;
 }
-
+*/
+/*
 @media screen and (min-width: 64em) {
-  .main {
+  main {
     max-width: 64em;
-    padding: 1em 5em;
+    padding: 0 5em;
     margin: 0 auto;
-    font-size: 1.1em;
   }
 }
 @media screen and (min-width: 42em) and (max-width: 64em) {
-  .main {
-    padding: 1em 3em;
-    font-size: 1.1em;
+  main {
+    padding: 0 3em;
   }
 }
 @media screen and (max-width: 42em) {
-  .main {
-    padding: 0.5em 1em;
-    font-size: 1em;
+  main {
+    padding: 0 1em;
   }
 }
-
-.footer {
+*/
+footer {
   padding: 1em;
   width: 100%;
   height: 3em;
   position: absolute;
   bottom: 0;
-  border-top: solid 1px #eff0f1;
-}
-
-@media screen and (min-width: 64em) {
-  .footer {
-    font-size: 1em;
-  }
-}
-@media screen and (min-width: 42em) and (max-width: 64em) {
-  .footer {
-    font-size: 1em;
-  }
-}
-@media screen and (max-width: 42em) {
-  .footer {
-    font-size: 0.9em;
-  }
+  border-top: solid 1px #fcf0f0;
 }
