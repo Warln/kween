@@ -181,7 +181,5 @@ footer {
   padding: 1em;
   width: 100%;
   height: 3em;
-  position: absolute;
-  bottom: 0;
   border-top: solid 1px #fcf0f0;
 }
