@@ -39,7 +39,8 @@ a:hover {
 	border-color: rgba(255, 255, 255, .3);
 }
 main {
-	max-width: 65em;
+	min-width: 35em;
+	max-width: 55em;
 	min-height: 20.5em;
 	padding: 0 1em;
 	margin: 0 auto;
