@@ -50,29 +50,29 @@ a:hover {
   }
 }
 
-.-header {
+.header {
   color: #fff;
   text-align: center;
   background-color: #157757;
-  background-image: linear-gradient(110deg, #155799, #175757);
+  background-image: linear-gradient(130deg, #155799, #175757);
 }
-
+/*
 @media screen and (min-width: 64em) {
-  .-header {
+  .header {
     padding: 1em auto;
   }
 }
 @media screen and (min-width: 42em) and (max-width: 64em) {
-  .-header {
+  .header {
     padding: 1em auto;
   }
 }
 @media screen and (max-width: 42em) {
-  .-header {
+  .header {
     padding: 0 auto;
   }
 }
-
+*/
 .main:first-child {
   margin-top: 0; }
 .main img {
