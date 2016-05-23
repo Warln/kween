@@ -48,14 +48,8 @@ a:hover {
 
 @media screen and (max-width: 42em) {
   .btn {
-    display: block;
-    width: 100%;
     padding: 0.7em;
     font-size: 0.9em;
-  }
-  .btn + .btn {
-    margin-top: 1em;
-    margin-left: 0;
   }
 }
 
