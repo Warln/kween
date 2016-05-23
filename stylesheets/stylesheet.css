@@ -5,7 +5,7 @@ body {
   color: #707c77;
 }
 header {
-	padding-bottom: 1em;
+	padding: 1em 0;
 	width: 100%;
   color: #fff;
   text-align: center;
@@ -40,7 +40,7 @@ a:hover {
 }
 main {
   max-width: 65em;
-  padding: 0;
+  padding: 0 1em;
   margin: 0 auto;
 }
 main h1, main h2, main h3, main h4, main h5, main h6 {
