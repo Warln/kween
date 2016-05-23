@@ -2,63 +2,75 @@ body {
   padding: 0;
   margin: 0;
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #606c71; }
+  color: #606c71;
+}
 
 a {
   color: #1e6bb8;
-  text-decoration: none; }
-  a:hover {
-    text-decoration: underline; }
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
 
 .btn {
   display: inline-block;
-  margin-bottom: 1rem;
+  margin-bottom: 1em;
   color: rgba(255, 255, 255, 0.7);
   background-color: rgba(255, 255, 255, 0.07);
   border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 0.3rem;
-  transition: color 0.2s, background-color 0.2s, border-color 0.2s; }
-  .btn + .btn {
-    margin-left: 1rem; }
+  border-radius: 0.3em;
+  transition: color 0.2s, background-color 0.2s, border-color 0.2s;
+}
+.btn + .btn {
+  margin-left: 1em;
+}
 
 .btn:hover {
   color: rgba(255, 255, 255, 0.8);
   text-decoration: none;
   background-color: rgba(255, 255, 255, 0.1);
-  border-color: rgba(255, 255, 255, 0.3); }
+  border-color: rgba(255, 255, 255, 0.3);
+}
 
 @media screen and (min-width: 64em) {
   .btn {
-    padding: 0.7rem 0.9rem; } }
+    padding: 0.7em 0.9em;
+  }
+}
 
 @media screen and (min-width: 42em) and (max-width: 64em) {
   .btn {
-    padding: 0.5rem 0.7rem;
-    font-size: 0.7rem; }
+    padding: 0.5em 0.7em;
+    font-size: 0.7em;
+  }
 }
 
 @media screen and (max-width: 42em) {
   .btn {
     display: block;
     width: 100%;
-    padding: 0.7rem;
-    font-size: 0.9rem; }
-    .btn + .btn {
-      margin-top: 1rem;
-      margin-left: 0; }
+    padding: 0.7em;
+    font-size: 0.9em;
+  }
+  .btn + .btn {
+    margin-top: 1em;
+    margin-left: 0;
+  }
 }
 
 .header {
   color: #fff;
   text-align: center;
   background-color: #157757;
-  background-image: linear-gradient(110deg, #155799, #175757); }
+  background-image: linear-gradient(110deg, #155799, #175757);
+}
 
 @media screen and (min-width: 64em) {
   .header {
-    padding: 1em auto; } }
+    padding: 1em auto;
+  }
+}
 
 @media screen and (min-width: 42em) and (max-width: 64em) {
   .header {
@@ -73,8 +85,8 @@ a {
 .main img {
   max-width: 100%; }
 .main h1, .main h2, .main h3, .main h4, .main h5, .main h6 {
-  -margin-top: 2rem;
-  -margin-bottom: 1rem;
+  -margin-top: 2em;
+  -margin-bottom: 1em;
   font-weight: normal;
   color: #159957; }
 .main p {
@@ -82,40 +94,40 @@ a {
 .main code {
   padding: 2px 4px;
   font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
-  font-size: 0.9rem;
+  font-size: 0.9em;
   color: #383e41;
   background-color: #f3f6fa;
-  border-radius: 0.3rem; }
+  border-radius: 0.3em; }
 .main pre {
-  padding: 0.8rem;
+  padding: 0.8em;
   margin-top: 0;
-  margin-bottom: 1rem;
-  font: 1rem Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  margin-bottom: 1em;
+  font: 1em Consolas, "Liberation Mono", Menlo, Courier, monospace;
   color: #567482;
   word-wrap: normal;
   background-color: #f3f6fa;
   border: solid 1px #dce6f0;
-  border-radius: 0.3rem; }
+  border-radius: 0.3em; }
   .main pre > code {
     padding: 0;
     margin: 0;
-    font-size: 0.9rem;
+    font-size: 0.9em;
     color: #567482;
     word-break: normal;
     white-space: pre;
     background: transparent;
     border: 0; }
 .main .highlight {
-  margin-bottom: 1rem; }
+  margin-bottom: 1em; }
   .main .highlight pre {
     margin-bottom: 0;
     word-break: normal; }
 .main .highlight pre, .main pre {
-  padding: 0.8rem;
+  padding: 0.8em;
   overflow: auto;
-  font-size: 0.9rem;
+  font-size: 0.9em;
   line-height: 1.45;
-  border-radius: 0.3rem; }
+  border-radius: 0.3em; }
 .main pre code, .main pre tt {
   display: inline;
   max-width: initial;
@@ -131,10 +143,10 @@ a {
 .main ul, .main ol {
   margin-top: 0; }
 .main blockquote {
-  padding: 0 1rem;
+  padding: 0 1em;
   margin-left: 0;
   color: #819198;
-  border-left: 0.3rem solid #dce6f0; }
+  border-left: 0.3em solid #dce6f0; }
   .main blockquote > :first-child {
     margin-top: 0; }
   .main blockquote > :last-child {
@@ -148,58 +160,58 @@ a {
   .main table th {
     font-weight: bold; }
   .main table th, .main table td {
-    padding: 0.5rem 1rem;
+    padding: 0.5em 1em;
     border: 1px solid #e9ebec; }
 .main dl {
   padding: 0; }
   .main dl dt {
     padding: 0;
-    margin-top: 1rem;
-    font-size: 1rem;
+    margin-top: 1em;
+    font-size: 1em;
     font-weight: bold; }
   .main dl dd {
     padding: 0;
-    margin-bottom: 1rem; }
+    margin-bottom: 1em; }
 .main hr {
   height: 2px;
   padding: 0;
-  margin: 1rem 0;
+  margin: 1em 0;
   background-color: #eff0f1;
   border: 0; }
 
 @media screen and (min-width: 64em) {
   .main {
-    max-width: 64rem;
-    padding: 1rem 5rem;
+    max-width: 64em;
+    padding: 1em 5em;
     margin: 0 auto;
-    font-size: 1.1rem; } }
+    font-size: 1.1em; } }
 
 @media screen and (min-width: 42em) and (max-width: 64em) {
   .main {
-    padding: 1rem 3rem;
-    font-size: 1.1rem; } }
+    padding: 1em 3em;
+    font-size: 1.1em; } }
 
 @media screen and (max-width: 42em) {
   .main {
-    padding: 0.5rem 1rem;
-    font-size: 1rem; } }
+    padding: 0.5em 1em;
+    font-size: 1em; } }
 
 .footer {
-  padding: 1rem auto;
+  padding: 1em auto;
   width: 100%;
-  height: 3rem;
+  height: 3em;
   position: absolute;
   bottom: 0;
   border-top: solid 1px #eff0f1; }
 
 @media screen and (min-width: 64em) {
   .footer {
-    font-size: 1rem; } }
+    font-size: 1em; } }
 
 @media screen and (min-width: 42em) and (max-width: 64em) {
   .footer {
-    font-size: 1rem; } }
+    font-size: 1em; } }
 
 @media screen and (max-width: 42em) {
   .footer {
-    font-size: 0.9rem; } }
+    font-size: 0.9em; } }
