@@ -5,65 +5,58 @@
 <title>Kueen</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 <link rel="stylesheet" type="text/css" href="styles/style.css" media="screen">
+<script src="js/vue.js"></script>
+<script src="js/vue-router.js"></script>
 </head>
 <body>
 	<header>
 		<h1>Kueen</h1>
 		<p>技术文章、文档翻译，优秀文章收集</p>
+		<a v-link="{name: 'home'}">首页</a>
+		<a v-link="{name: 'main'}">全部文章</a>
+		<a v-link="{name: 'category'}">分类</a>
 	</header>
-
-	<main>
+	<template id="homelist">
 		<h2>资源整理（来自个人搜集）</h2>
 		<p>
-		<ol>
-			<li>
-				<a>文章1</a>
-			</li>
-			<li>
-				<a>文章2</a>
-			</li>
-			<li>
-				<a>文章3</a>
-			</li>
-			<li>
-				<a>文章4</a>
-			</li>
-			<li>
-				<a>文章5</a>
-			</li>
-			<li>
-				<a>文章6</a>
-			</li>
-			<li>
-				<a>文章7</a>
-			</li>
-			<li>
-				<a>文章8</a>
-			</li>
-			<li>
-				<a>文章9</a>
-			</li>
-			<li>
-				<a>文章10</a>
-			</li>
-			<li>
-				<a>文章12</a>
-			</li>
-			<li>
-				<a>文章13</a>
-			</li>
-			<li>
-				<a>文章14</a>
-			</li>
-			<li>
-				<a>文章15</a>
-			</li>
-		</ol>
+			<ol>
+				<li v-for="li in 15">
+					<a>文章{{ li }}</a>
+				</li>
+			</ol>
 		</p>
+	</template>
+	<template id="main">
+		<h2>全部文章</h2>
+		<p>
+			<ol>
+				<li v-for="l in 35">
+					<a>文章{{ l }}</a>
+				</li>
+			</ol>
+		</p>
+	</template>
+	<template id="category">
+		<h2>文章分类</h2>
+		<p>
+			<ol>
+				<li v-for="c in 21">
+					<a>分类{{ c }}</a>
+				</li>
+			</ol>
+		</p>
+	</template>
+	<main>
+		<router-view>
+			<a v-link="{name: 'main'}">更多...</a>
+		</router-view>
 	</main>
 
 	<footer>
-		<a href="https://github.com/Warln/Queen">GitHub@Warln</a>
+		<a href="https://github.com/Warln/kueen">GitHub@Warln/kueen</a>
 	</footer>
+<script src="js/comps.js"></script>
+<script src="js/router.js"></script>
+<script src="js/app.js"></script>
 </body>
 </html>
